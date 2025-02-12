@@ -5,7 +5,7 @@ __pycache__/
 
 # Ignore model caches or large model files
 .cache/
-*.pth   
+*.pth
 *.pt
 
 
