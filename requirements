@@ -1,0 +1,8 @@
+pip install the following 
+
+transformers
+torch
+scrapy
+beautifulsoup4
+requests
+streamlit 
