@@ -21,7 +21,7 @@ async def crawl_company_links(relevant_links, max_depth=2):
     Returns:
       dict: Mapping of each URL to its full Markdown content.
       
-    Note (Aus): This function crawls each URL (and its sublinks up to depth 2)
+    Note: This function crawls each URL (and its sublinks up to depth 2)
     and returns all the text (in Markdown format) from each website.
     """
     crawled_data = {}
@@ -46,7 +46,7 @@ async def main():
       6. Sends the aggregated text to the summariser to generate a structured summary.
       7. Outputs the final structured summary.
       
-    Note (Aus): This approach gathers comprehensive online data about a company and then produces
+    Note: This approach gathers comprehensive online data about a company and then produces
     a structured summary (e.g. company history, business model, funding status, key achievements).
     """
     # Retrieve API keys from environment variables
