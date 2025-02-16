@@ -2,7 +2,7 @@ import os
 import re
 import requests
 from dotenv import load_dotenv
-from search_module import google_search  # <-- your search function here
+from search_module import google_search
 
 # Load environment variables from .env
 load_dotenv()
@@ -17,7 +17,7 @@ def evaluate_search_results_with_gemini(results, gemini_api_key, company=None):
       gemini_api_key (str): Your Google Gemini API key.
       company (str): Optional company name to include in the prompt.
     
-    Note (Aus): This version dynamically builds the prompt based on the company name.
+    Note : This version dynamically builds the prompt based on the company name.
     """
     header = f"We have these search results about {company}:\n\n" if company else "We have these search results about the company:\n\n"
     prompt_text = header
